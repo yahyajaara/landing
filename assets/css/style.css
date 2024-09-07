@@ -1,0 +1,414 @@
+@import url("./bais.css");
+
+/************ start header ****************************************************************************************/
+.header
+{
+    padding: 20px 5px;
+    box-shadow: 0px 25px 50px;
+    position: sticky;
+}
+
+.header .logo  .row
+{
+    gap: 5px;
+}
+
+.header .logo img
+{
+    width: 40px;
+}
+
+.header .logo p
+{
+    color:var(--mainColor);
+    font-family: var(--mainfont);
+    font-size: 20px;
+}
+
+.header .navbar i
+{
+    display: none;
+}
+
+.header .navbar ul 
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.header .navbar ul a 
+{
+    font-family: var(--mainfont);
+    font-size: 20px;
+    color: black;
+}
+
+.header .navbar ul .active
+{
+    font-weight: bold;
+}
+
+
+
+.header .auth 
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.header .auth .login
+{
+    font-size: 20px;
+    font-family: var(--primefont);
+    color: var(--mainColor);
+    border: 0.4px solid var(--mainColor) ;
+    border-radius: 4.11px ;
+    padding: 5.3541765213012695px 20.18113136291504px;
+}
+
+.header .auth .register
+{
+    font-size: 20px;
+    font-family: var(--primefont);
+    color: var(--primeColor);
+    background-color: var(--mainColor);
+    border: 0.4px solid var(--mainColor) ;
+    border-radius: 4.11px ;
+    padding: 5.3541765213012695px 20.18113136291504px;
+}
+
+
+
+
+
+@media screen and (max-width: 1200px) 
+{
+ 
+    .header .navbar ul 
+    {
+        display: none;
+    }
+
+    .header .navbar i
+    {
+        display: block;
+    }
+
+    .header .navbar
+    {
+        order: 2;
+    }
+
+}
+
+
+@media screen and (max-width: 696px) 
+{
+
+    .header .auth
+    {
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 430px) 
+{
+    .container
+    {
+        width:calc(100% - 50px);
+        margin: auto;
+    }
+
+    .header .navbar
+    {
+        margin-right: -3px;
+    }
+
+}
+
+/************ end header ****************************************************************************************/
+
+
+
+/************ start Testimonials ****************************************************************************************/
+
+.Testimonials
+{
+    margin: 50px 0px 40px;
+}
+
+.Testimonials h2
+{
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.Testimonials-start
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    width: calc((100% - 60px) / 2);
+    box-shadow: -20px 20.23719596862793px 6.23719596862793px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    padding: 60px;
+    
+}
+
+.Testimonials-start .user-data img
+{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.Testimonials-start .user-data
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.Testimonials-start .user-name
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.Testimonials-start .star
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+
+
+.Testimonials-end
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    width: calc((100% - 60px) / 2);
+    box-shadow: -20px 20.23719596862793px 6.23719596862793px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    padding: 60px;
+    
+}
+
+.Testimonials-end .user-data img
+{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.Testimonials-end .user-data
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.Testimonials-end .star
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+  
+
+
+@media screen and (max-width: 1000px) 
+{
+
+    
+
+    .Testimonials .row
+    {
+        gap: 30px;
+        text-align: center;
+    }
+
+
+    .Testimonials .user-data 
+    {
+        flex-direction: column;
+    }
+
+
+    .Testimonials .star
+    {
+        justify-content: center;
+    }
+
+
+    .Testimonials .user-data img 
+    {
+        width:  130px;
+        height: 130px;
+    }
+
+    
+
+
+    .Testimonials-start
+    {
+        width: 100%;
+    
+    }
+
+    
+    .Testimonials-end
+    {
+        width: 100%;
+       
+    }
+
+}
+
+/************ end Testimonials ****************************************************************************************/
+
+
+
+
+
+
+
+
+
+/************ start footer ****************************************************************************************/
+
+.footer
+{
+    background-color: #393E46;
+    color: var(--primeColor);
+    padding: 60px 5px;
+    font-family: var(--mainfont);
+}
+
+.footer a
+{
+    color: var(--primeColor);
+}
+
+.footer .row
+{
+    gap: 70px;
+}
+
+.start-footer
+{
+    width: calc((100% - 70px)/2);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column ;
+    gap: 35px ;
+}
+
+.start-footer .logo img
+{
+    width: 30px;
+}
+
+.start-footer .logo
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+    gap: 5px;
+    
+}
+
+.start-footer .icon img
+{
+    width: 15px;
+    border: 0.4px solid var(--primeColor);
+    padding: 5px;
+}
+
+
+
+.end-footer
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: calc((100% - 70px)/2);
+    justify-content: space-evenly;
+}
+
+.end-footer .nav-end-footer
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+@media screen and (max-width: 1200px) 
+{
+    .footer .row
+    {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+
+    .start-footer
+    {
+        width: 100%;
+        margin: auto;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .end-footer
+    {
+        width: 100%;
+        justify-content:center;
+        gap: 70px;
+        
+    }
+
+}
+
+
+@media screen and (max-width: 800px)
+{
+
+    .end-footer .nav-end-footer
+    {
+        width: calc((100% - 120px) / 2);
+        align-items: center;
+
+    }
+
+} 
+
+
+@media screen and (max-width: 560px)
+{
+
+    .end-footer .nav-end-footer
+    {
+        width: calc((100% - 120px));
+        align-items: center;
+        margin: auto;
+        
+    }
+
+}
+
+/************ end footer ****************************************************************************************/
