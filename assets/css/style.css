@@ -1,5 +1,16 @@
 @import url("./bais.css");
 
+
+@media screen and (max-width: 370px) 
+    {
+        
+        body 
+        {
+            font-size: 17px;
+        }
+       
+    }
+
 /************ start header ****************************************************************************************/
 .header
 {
@@ -22,7 +33,6 @@
 {
     color:var(--mainColor);
     font-family: var(--mainfont);
-    font-size: 20px;
 }
 
 .header .navbar i
@@ -40,7 +50,6 @@
 .header .navbar ul a 
 {
     font-family: var(--mainfont);
-    font-size: 20px;
     color: black;
 }
 
@@ -60,7 +69,6 @@
 
 .header .auth .login
 {
-    font-size: 20px;
     font-family: var(--primefont);
     color: var(--mainColor);
     border: 0.4px solid var(--mainColor) ;
@@ -70,7 +78,6 @@
 
 .header .auth .register
 {
-    font-size: 20px;
     font-family: var(--primefont);
     color: var(--primeColor);
     background-color: var(--mainColor);
@@ -130,6 +137,7 @@
 
 }
 
+
 /************ end header ****************************************************************************************/
 
 
@@ -139,7 +147,7 @@
 .Courses
 {
     margin-top: 50px;
-    font-size: 20px;
+    
 }
 
 .Courses .row
@@ -379,7 +387,6 @@ h2
 .Testimonials
 {
     margin: 50px 0px 40px;
-    font-size: 20px;
     
 }
 
