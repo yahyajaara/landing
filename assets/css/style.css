@@ -115,7 +115,7 @@
 }
 
 
-@media screen and (max-width: 430px) 
+@media screen and (max-width: 460px) 
 {
     .container
     {
@@ -125,7 +125,7 @@
 
     .header .navbar
     {
-        margin-right: -3px;
+        margin-right: 0px;
     }
 
 }
@@ -134,11 +134,253 @@
 
 
 
+/************ start Courses ****************************************************************************************/
+
+.Courses
+{
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.Courses .row
+{
+    align-items:start;
+    gap: 20px;
+}
+
+.Courses img
+{
+    width: 100%;
+    filter: brightness(70%);
+}
+
+.Courses .description
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+
+    padding: 5px;
+}
+
+.Courses .description span:last-of-type
+{
+    font-family: var(--mainfont);
+    align-self: flex-end;
+    color:aliceblue;
+    font-weight: bold;
+    padding: 3px;
+    
+}
+
+.Courses .description span:first-of-type
+{
+    font-family: var(--mainfont);
+    background-color: #545BE8;
+    color: aliceblue;
+    padding: 3px;
+
+}
+
+
+
+
+.Courses .courses-start
+{
+    width: calc((60% - 20px));
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.courses-start
+.html-css, 
+.Photographer,
+.JavaScript,
+.DesainGrafis
+{
+    width: calc((100% - 40px)/2);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 5px;
+    padding: 15px;
+    box-sizing: border-box;
+    box-shadow: 0px 7.437575340270996px 7.437575340270996px rgba(0, 0, 0, 0.05);
+}
+
+
+.top-html-css,
+.top-Photographer,
+.top-JavaScript,
+.top-DesainGrafis
+{
+    width: 100%;
+    position: relative;
+
+}
+
+
+
+.bottom-html-css,
+.bottom-Photographer,
+.bottom-JavaScript,
+.bottom-DesainGrafis
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 7px;
+
+}
+
+.bottom-html-css div:first-of-type,
+.bottom-Photographer div:first-of-type,
+.bottom-JavaScript div:first-of-type,
+.bottom-DesainGrafis div:first-of-type
+
+{
+    font-family: var(--mainfont);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-html-css div:last-of-type,
+.bottom-Photographer div:last-of-type,
+.bottom-JavaScript div:last-of-type,
+.bottom-DesainGrafis div:last-of-type
+{
+    font-family: var(--mainfont);
+    color: #969696;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+
+
+
+
+
+
+.Courses .courses-end
+{
+    width: calc((40% - 20px) );
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.courses-end p
+{
+    color: #969696;
+}
+
+
+.courses-end 
+p,
+h2
+{
+    font-family: var(--mainfont);
+}
+
+
+.courses-end a
+{
+    font-family: var(--primefont);
+}
+
+.courses-end a:last-of-type
+{
+    width: fit-content;
+    color: var(--primeColor);
+    text-align: center;
+    background-color: var(--mainColor);
+    border: 0.4px solid var(--mainColor) ;
+    border-radius: 4.11px ;
+    padding: 10.3541765213012695px 40.18113136291504px;
+}
+
+
+
+
+
+@media screen and (max-width: 1220px) 
+{
+
+    .Courses .row
+    {
+        flex-direction: column;
+    }
+
+    .Courses .courses-start
+    {
+        width:100%;
+        order: 2;
+    }
+
+    .Courses .courses-end
+    {
+        width:100%;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+
+
+@media screen and (max-width: 775px) 
+{
+
+    .courses-start
+    .html-css, 
+    .Photographer,
+    .JavaScript,
+    .DesainGrafis
+    {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+
+    .Courses .description span:first-of-type
+    {
+        padding: 0px;
+    }
+
+} 
+
+
+
+/************ end Courses ****************************************************************************************/
+
+
 /************ start Testimonials ****************************************************************************************/
 
 .Testimonials
 {
     margin: 50px 0px 40px;
+    font-size: 20px;
+    
 }
 
 .Testimonials h2
@@ -157,7 +399,19 @@
     box-shadow: -20px 20.23719596862793px 6.23719596862793px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
     padding: 60px;
-    
+    position: relative;
+}
+
+.Testimonials-start ::after
+{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-top:35px solid #aeaeae;
+    border-bottom: 35px solid transparent;
+    border-right: 35px solid #aeaeae;
+    border-left: 35px solid transparent;
 }
 
 .Testimonials-start .user-data img
@@ -201,8 +455,24 @@
     box-shadow: -20px 20.23719596862793px 6.23719596862793px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
     padding: 60px;
+    position: relative;
     
 }
+
+.Testimonials-end ::after
+{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-top:35px solid #aeaeae;
+    border-bottom: 35px solid transparent;
+    border-right: 35px solid #aeaeae;
+    border-left: 35px solid transparent;
+
+}
+
+
 
 .Testimonials-end .user-data img
 {
@@ -278,12 +548,6 @@
 }
 
 /************ end Testimonials ****************************************************************************************/
-
-
-
-
-
-
 
 
 
@@ -412,3 +676,10 @@
 }
 
 /************ end footer ****************************************************************************************/
+
+
+
+
+
+
+
