@@ -141,6 +141,164 @@
 /************ end header ****************************************************************************************/
 
 
+/************ start Course Content ****************************************************************************************/
+
+
+.CourseContent
+{
+    background-color: #FFFFFF;
+    margin-top: 40px;
+    padding: 30px;
+   
+}
+
+.CourseContent .row
+{
+    gap: 50px;
+    
+}
+
+
+.CourseContent .start-CourseContent
+{
+
+    width: calc((25% - 50px));
+}
+
+
+.CourseContent .end-CourseContent
+{
+    color: var(--primeColor);
+    width: calc((75% - 50px));
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.ProfessionalTeacher,
+.CourseCertificate,
+.interestinglearning,
+.VideosCourse 
+{
+    width: calc((100%  - 60px) / 4 );
+    background-color: #545BE8;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-radius: 10.118597984313965px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; 
+    gap: 15px;
+    
+}
+
+
+.end-CourseContent img
+{
+    width: 35px;
+    height: 35px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+}
+
+
+
+@media screen and (max-width: 1300px) 
+{
+
+    .CourseContent .start-CourseContent
+    {
+        
+        width: calc((30% - 50px));
+    }
+
+    .CourseContent .end-CourseContent
+    {
+        
+        width: calc((70% - 50px));
+
+    }
+
+    .ProfessionalTeacher,
+    .CourseCertificate,
+    .interestinglearning,
+    .VideosCourse 
+    {
+        width: calc((100%  - 20px)/2);
+
+    }
+
+}
+
+
+@media screen and (max-width: 1015px) and (min-width: 947px) 
+{
+
+    .ProfessionalTeacher,
+    .CourseCertificate,
+    .interestinglearning,
+    .VideosCourse 
+    {
+        height: 289.9px;
+    }
+
+}
+
+@media screen and (max-width: 940px)
+{
+
+    .CourseContent .row
+    {
+        flex-direction: column;
+    }
+
+
+    .CourseContent .start-CourseContent
+    {
+        width: 100%;
+        text-align: center;
+    }
+
+    .CourseContent .end-CourseContent
+    {
+        width: 100%;
+        margin: auto;
+    }
+
+}
+
+@media screen and (max-width: 725px) and (min-width: 677px) 
+{
+
+    .ProfessionalTeacher,
+    .CourseCertificate,
+    .interestinglearning,
+    .VideosCourse 
+    {
+        height: 289.8px;
+    }
+
+
+}
+
+@media screen and (max-width: 630px)
+{
+    .ProfessionalTeacher,
+    .CourseCertificate,
+    .interestinglearning,
+    .VideosCourse 
+    {
+        width: calc((100%  - 20px));
+
+    }
+}
+
+
+/************ end Course Content ****************************************************************************************/
+
 /************ start TakingCourses ****************************************************************************************/
 
 .TakingCourses
@@ -262,18 +420,6 @@
         gap: 30px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /************ end TakingCourses ****************************************************************************************/
@@ -697,6 +843,11 @@ h2
 
 /************ start footer ****************************************************************************************/
 
+.footer h2
+{
+}
+   
+
 .footer
 {
     background-color: #393E46;
@@ -712,12 +863,12 @@ h2
 
 .footer .row
 {
-    gap: 70px;
+    gap: 50px;
 }
 
 .start-footer
 {
-    width: calc((100% - 70px)/2);
+    width: calc((40% - 50px));
     display: flex;
     flex-wrap: wrap;
     flex-direction: column ;
@@ -750,10 +901,10 @@ h2
 
 .end-footer
 {
+    width: calc((60% - 50px));
     display: flex;
     flex-wrap: wrap;
-    width: calc((100% - 70px)/2);
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .end-footer .nav-end-footer
@@ -764,7 +915,7 @@ h2
 }
 
 
-@media screen and (max-width: 1200px) 
+@media screen and (max-width:1272px) 
 {
     .footer .row
     {
@@ -820,7 +971,6 @@ h2
 }
 
 /************ end footer ****************************************************************************************/
-
 
 
 
