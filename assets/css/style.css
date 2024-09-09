@@ -141,6 +141,89 @@
 /************ end header ****************************************************************************************/
 
 
+/************ start TakingCourses ****************************************************************************************/
+
+.TakingCourses
+{
+    margin-top: 30px;
+    color: var(--primeColor);
+    background: linear-gradient(180deg, #545be8 0%, #272db0 100%);
+}
+
+.TakingCourses a
+{
+    color: #F0C932;
+}
+
+.TakingCourses .row
+{
+    gap: 120px;
+    
+}
+
+.start-taking-courses
+{
+    width: calc((100% - 120px)/2);
+    
+}
+
+.start-taking-courses img
+{
+    width: 100%;
+}
+
+.end-taking-courses
+{
+    width: calc((100% - 120px)/2);
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.end-taking-courses .statistics
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 110px;
+    margin-top: 15px;
+}
+
+.statistics .PeopleViews a
+{
+    margin-left: 27px;
+}
+
+
+.statistics .Course a
+{
+    margin-left: 11px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************ end TakingCourses ****************************************************************************************/
+
 
 /************ start Courses ****************************************************************************************/
 
