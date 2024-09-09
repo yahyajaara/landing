@@ -122,7 +122,7 @@
 }
 
 
-@media screen and (max-width: 460px) 
+@media screen and (max-width: 480px) 
 {
     .container
     {
@@ -157,7 +157,7 @@
 
 .TakingCourses .row
 {
-    gap: 120px;
+    gap: 100px;
     
 }
 
@@ -175,11 +175,11 @@
 .end-taking-courses
 {
     width: calc((100% - 120px)/2);
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
 
 }
 
@@ -191,23 +191,77 @@
     margin-top: 15px;
 }
 
-.statistics .PeopleViews a
+.PeopleViews,
+.User,
+.Course
 {
-    margin-left: 27px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
-.statistics .Course a
+@media screen and (max-width: 1120px) 
 {
-    margin-left: 11px;
+    .end-taking-courses .statistics
+    {
+        gap: 60px;
+    }
+
+
+    .end-taking-courses
+    {
+        margin-bottom: 30px;
+    }
 }
 
 
+@media screen and (max-width: 940px)
+{
+
+    .TakingCourses .row
+    {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .start-taking-courses
+    {
+        text-align: center;
+        width: 100%;
+        order: 2;
+    }
+
+    .start-taking-courses img
+    {
+        width: 70%;
+    }   
+
+    .end-taking-courses
+    {
+        text-align: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .end-taking-courses .statistics
+    {
+        justify-content: center;
+    }
+
+} 
 
 
-
-
-
+@media screen and (max-width: 350px) 
+{
+    .end-taking-courses .statistics
+    {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
 
 
 
