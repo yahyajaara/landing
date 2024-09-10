@@ -141,14 +141,199 @@
 /************ end header ****************************************************************************************/
 
 
+/************ start advertisement ****************************************************************************************/
+
+.advertisement
+{
+    background-color: var(--primeColor);
+    font-family: var(--mainfont);
+    padding: 40px;
+}
+
+
+.advertisement h1
+{
+    font-size: 60px;
+}
+
+.advertisement h1 span
+{
+    color: var(--mainColor);
+}
+
+
+.advertisement .start-advertisement
+{
+    width: calc((40% - 30px));
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.start-advertisement a
+{
+    font-family: var(--primefont);
+    color: var(--mainColor);
+}
+
+.start-advertisement .playvideo img
+{
+    width: 30px;
+}
+
+.start-advertisement .playvideo
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.start-advertisement .register-playvideo
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+}
+
+.register-playvideo a
+{
+    width: fit-content;
+    font-family: var(--primefont);
+    color: var(--primeColor);
+    background-color: var(--mainColor);
+    border: 0.4px solid var(--mainColor) ;
+    border-radius: 4.11px ;
+    padding: 5.3541765213012695px 20.18113136291504px;
+}
+
+
+
+.advertisement .end-advertisement
+{
+    width: calc((60% - 30px));
+    text-align: center;
+
+}
+
+.end-advertisement img
+{
+    width: 65%;
+    margin-right: 80px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1322px) 
+{
+
+    .end-advertisement img
+    {
+        width: 75%;
+        margin-right: 70px;
+    }   
+
+    
+}
+
+@media screen and (max-width: 1145px) 
+{
+
+    .end-advertisement img
+    {
+        width: 85%;
+        margin-right: 70px;
+    }   
+
+ 
+}
+
+@media screen and (max-width: 1050px) 
+{
+
+    .advertisement .row
+    {
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    .advertisement h1
+    {
+        font-size: 40px ;
+       
+    }
+
+    .advertisement .start-advertisement
+    {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+    }
+
+
+    .advertisement .end-advertisement
+    {
+        width: 100%;
+      
+    }
+
+    .end-advertisement img
+    {
+        width: 60%;
+        margin-right: 0px;
+    }   
+
+
+}
+
+
+@media screen and (max-width: 750px) 
+{
+
+    .end-advertisement img
+    {
+        width: 100%;
+        margin-right: 0px;
+    }   
+
+
+}
+
+
+@media screen and (max-width: 530px) 
+{
+
+    .start-advertisement .register-playvideo
+    {
+        flex-direction: column;
+    }
+
+    .register-playvideo a 
+    {
+        order: 2;
+    }
+
+    
+}
+
+/************ end advertisement ****************************************************************************************/
+
+
 /************ start Course Content ****************************************************************************************/
 
 
 .CourseContent
 {
-    background-color: #FFFFFF;
-    margin-top: 40px;
+    background-color: #F5F5F5;
     padding: 30px;
+    font-family: var(--mainfont);
    
 }
 
@@ -158,23 +343,38 @@
     
 }
 
+.CourseContent a
+{
+    color:var(--mainColor) ;
+    font-family: var(--primefont);
+}
+
+
 
 .CourseContent .start-CourseContent
 {
-
-    width: calc((25% - 50px));
+    width: calc((20% - 50px));
 }
 
+.start-CourseContent p 
+{
+    color: #969696;
+}
 
 .CourseContent .end-CourseContent
 {
     color: var(--primeColor);
-    width: calc((75% - 50px));
+    width: calc((80% - 50px));
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 20px;
+}
+
+.end-CourseContent p 
+{
+    color: #DDDDDD;
 }
 
 
@@ -184,7 +384,7 @@
 .VideosCourse 
 {
     width: calc((100%  - 60px) / 4 );
-    background-color: #545BE8;
+    background-color:var(--mainColor);
     padding: 30px 20px;
     box-sizing: border-box;
     border-radius: 10.118597984313965px;
@@ -200,19 +400,24 @@
 {
     width: 35px;
     height: 35px;
-    background-color: #FFFFFF;
+    background-color: var(--primeColor);
     border-radius: 50%;
 }
 
 
 
-@media screen and (max-width: 1300px) 
+@media screen and (max-width: 1400px) 
 {
+
+    .CourseContent .row
+    {
+        align-items: start;
+    }
 
     .CourseContent .start-CourseContent
     {
-        
         width: calc((30% - 50px));
+        margin-top: 90px;
     }
 
     .CourseContent .end-CourseContent
@@ -234,7 +439,7 @@
 }
 
 
-@media screen and (max-width: 1015px) and (min-width: 947px) 
+@media screen and (max-width: 1145px) and (min-width: 1029px) 
 {
 
     .ProfessionalTeacher,
@@ -242,10 +447,11 @@
     .interestinglearning,
     .VideosCourse 
     {
-        height: 289.9px;
+        height: 347.4px;
     }
 
 }
+
 
 @media screen and (max-width: 940px)
 {
@@ -260,6 +466,7 @@
     {
         width: 100%;
         text-align: center;
+        margin-top: 0px;
     }
 
     .CourseContent .end-CourseContent
@@ -270,7 +477,7 @@
 
 }
 
-@media screen and (max-width: 725px) and (min-width: 677px) 
+@media screen and (max-width: 815px) and (min-width: 733px) 
 {
 
     .ProfessionalTeacher,
@@ -278,13 +485,13 @@
     .interestinglearning,
     .VideosCourse 
     {
-        height: 289.8px;
+        height: 347.4px;
     }
 
 
 }
 
-@media screen and (max-width: 630px)
+@media screen and (max-width: 700px)
 {
     .ProfessionalTeacher,
     .CourseCertificate,
@@ -292,8 +499,15 @@
     .VideosCourse 
     {
         width: calc((100%  - 20px));
+        text-align: center;
 
     }
+
+    .end-CourseContent img
+    {
+        margin: auto;
+    }
+
 }
 
 
@@ -305,12 +519,14 @@
 {
     margin-top: 30px;
     color: var(--primeColor);
+    font-family: var(--mainfont);
     background: linear-gradient(180deg, #545be8 0%, #272db0 100%);
 }
 
 .TakingCourses a
 {
     color: #F0C932;
+    font-family: var(--primefont);
 }
 
 .TakingCourses .row
@@ -361,7 +577,7 @@
 }
 
 
-@media screen and (max-width: 1120px) 
+@media screen and (max-width: 1204px) 
 {
     .end-taking-courses .statistics
     {
@@ -376,7 +592,7 @@
 }
 
 
-@media screen and (max-width: 940px)
+@media screen and (max-width: 1006px)
 {
 
     .TakingCourses .row
@@ -411,6 +627,15 @@
 
 } 
 
+@media screen and (max-width: 517px) 
+{
+    .end-taking-courses .statistics
+    {
+        gap: 30px;
+    }
+}
+
+
 
 @media screen and (max-width: 350px) 
 {
@@ -430,7 +655,13 @@
 .Courses
 {
     margin-top: 50px;
+    font-family: var(--mainfont);
     
+}
+
+.Courses a 
+{
+    font-family: var(--primefont);
 }
 
 .Courses .row
@@ -564,11 +795,6 @@
 }
 
 
-
-
-
-
-
 .Courses .courses-end
 {
     width: calc((40% - 20px) );
@@ -669,7 +895,9 @@ h2
 
 .Testimonials
 {
-    margin: 50px 0px 40px;
+    margin: 80px 20px;
+    font-family: var(--mainfont);
+    padding: 40px;
     
 }
 
@@ -792,8 +1020,6 @@ h2
 @media screen and (max-width: 1000px) 
 {
 
-    
-
     .Testimonials .row
     {
         gap: 30px;
@@ -892,7 +1118,7 @@ h2
 
 .start-footer .icon img
 {
-    width: 15px;
+    width: 30px;
     border: 0.4px solid var(--primeColor);
     padding: 5px;
 }
